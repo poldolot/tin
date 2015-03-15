@@ -1,0 +1,11 @@
+@import url('style.css');
+
+html {
+    font: Arial;
+}
+
+nav,
+footer p.validator,
+article.wyksztalcenie a {
+    display: none;
+}

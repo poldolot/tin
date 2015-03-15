@@ -1,0 +1,59 @@
+@import url('style.css');
+
+html {
+    background: #9F6;
+}
+
+body {
+    margin-left: 250px;
+}
+
+nav#spisTresci {
+    float: left;
+    top: 10px;
+    left: 30px;
+    position: fixed;
+}
+nav li.wyksztalcenie ul {
+    display: none;
+}
+nav li.wyksztalcenie a:hover + ul,
+nav li.wyksztalcenie ul:hover {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #9F6;
+    padding: 15px 0;
+    width: 200px;
+}
+nav ul li {
+    margin-left: -1px;
+}
+nav ul ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul ul li a {
+    padding-left: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 5px;
+    border: 1px solid transparent;
+    border-left-color: #AAA;
+    color: #F04;
+}
+nav ul li a:hover {
+    color: #00F;
+    border: 1px solid #AAA;
+    border-left-color: #9F6;
+    border-radius: 0 6px 6px 0;
+}
+
+footer p.wydruk {
+    display: none;
+}

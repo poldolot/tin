@@ -1,0 +1,27 @@
+html {
+    background: #9F6;
+}
+
+figure.zdjecieGlowne {
+    text-align: center;
+}
+
+dd[itemprop="director"] span {
+    font-variant: small-caps;
+}
+ol.filmy li>span {
+    font-style: italic;
+}
+
+ol.filmy {
+    list-style-type: upper-roman;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #888;
+}
+
+footer .validator {
+    float: right;
+}
