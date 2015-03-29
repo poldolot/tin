@@ -1,4 +1,5 @@
 * {
+    margin: 0;
     padding: 0;
 }
 
@@ -6,16 +7,17 @@ html {
     background-color: #DADADC;
 }
 
-nav {
-    margin: 0 30px;
-    min-width: 550px;
-}
-
 nav > ul {
     border-radius: 8px 8px 0 0;
     margin: 0 auto;
-    width: 520px;
-    padding: 10px 7% 0 7% !important;
+    width: 518px;
+    padding: 10px 7% 0 7%;
+}
+
+nav > ul:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 nav ul,
@@ -25,11 +27,10 @@ nav li {
 
 nav ul {
     list-style-type: none;
-    padding: 0 3px;
 }
 
 nav li {
-    display: inline-block;
+    float: left;
     border: 1px solid #000;
     border-bottom-color: transparent;
     border-radius: 4px 4px 0 0;
@@ -37,17 +38,18 @@ nav li {
     text-align: center;
 }
 
-nav li.double ul {
-    padding-top: 1.1em;
+nav li {
+    margin: 0 2px;
 }
 
+nav li.double ul,
 nav li.single {
-    padding-top: 1.1em;
+    padding-top: 1em;
 }
 
 nav li.selected,
 nav li.selected > ul {
-    background-color: #DADADA;
+    background-color: #DADADC;
 }
 
 nav li.clickable {
