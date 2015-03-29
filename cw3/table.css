@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+table tbody tr:first-child {
+    font-family: Arial;
+    border-bottom: 1px solid #000;
+}
+
+table tbody tr:first-child th {
+    padding: 5px;
+}
+
+table tbody tr:not(:first-child):nth-child(odd) {
+    background-color: #EEF;
+}
+
+table tbody td:nth-child(1),
+table tbody td:nth-child(2) {
+    text-align: left;
+}
+
+table td {
+    font-family: Monaco;
+    padding: 2px 5px;
+    text-align: right;
+}

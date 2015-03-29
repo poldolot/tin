@@ -1,0 +1,30 @@
+body {
+    font-family: Courier;
+}
+
+ul {
+    list-style: none;
+}
+
+div.icon {
+    float: left;
+    background-image: url('icons.png');
+    background-position: 0 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+li.open div.icon {
+    background-position: 0 31px;
+}
+
+li.leaf div.icon {
+    background-position: 0 16px;
+    cursor: inherit;
+}
+
+div.text {
+    margin-left: 17px;
+}
