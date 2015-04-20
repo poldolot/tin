@@ -57,7 +57,7 @@ nav li a {
   text-decoration: none;
   font-family: Arial;
 }
-nav li :hover {
+nav li:hover {
   background-image: url('images/bg_nav_h.png');
 }
 @media (min-width: 600px) {
