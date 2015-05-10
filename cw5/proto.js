@@ -5,5 +5,5 @@ String.prototype.deogonkify = function() {
     return this.replace(/[ĄĆĘŁŃÓŚŻŹąćęłńóśżź]/g, function(a){return replaceMap[a]||a})
 };
 
-var test = new String('Zażółć gęślą jaźń');
-console.log(test.deogonkify());
+// var test = new String('Zażółć gęślą jaźń');
+// console.log(test.deogonkify());

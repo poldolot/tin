@@ -23,9 +23,9 @@ var factorial = cached([1], function (recur, n) {
     return recur(n - 1) *n;
 });
 
-console.log('factorial dla 5: ' + factorial(5));
-console.log('factorial dla 8: ' + factorial(8));
-console.log('fibonacci dla 7: ' + fibonacci(7));
-console.log('fibonacci dla 8: ' + fibonacci(8));
-console.log('fibonacci dla 40: ' + fibonacci(40));
-console.log('fibonacci dla 60: ' + fibonacci(60));
+// console.log('factorial dla 5: ' + factorial(5));
+// console.log('factorial dla 8: ' + factorial(8));
+// console.log('fibonacci dla 7: ' + fibonacci(7));
+// console.log('fibonacci dla 8: ' + fibonacci(8));
+// console.log('fibonacci dla 40: ' + fibonacci(40));
+// console.log('fibonacci dla 60: ' + fibonacci(60));

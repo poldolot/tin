@@ -12,7 +12,7 @@ var createCounters = function(n) {
     return counters;
 }
 
-var counters = createCounters(1000);
-console.log(counters[0]());
-console.log(counters[10]());
-console.log(counters[34]());
+// var counters = createCounters(1000);
+// console.log(counters[0]());
+// console.log(counters[10]());
+// console.log(counters[34]());

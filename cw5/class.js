@@ -18,7 +18,7 @@ var addClassName = function(obj, name) {
     return true;
 }
 
-addClassName(obj, 'visible');
-console.log(obj.className);
-addClassName(obj, 'visible');
-console.log(obj.className);
+// addClassName(obj, 'visible');
+// console.log(obj.className);
+// addClassName(obj, 'visible');
+// console.log(obj.className);
