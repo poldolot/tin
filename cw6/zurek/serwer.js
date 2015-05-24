@@ -10,7 +10,6 @@ var morgan = require('morgan');
 var baza = require('./db/books');
 var fs = require('fs');
 
-
 app.set('view engine', 'ejs');
 
 app.use(morgan('dev'));
@@ -49,19 +48,17 @@ app.post('/:gen', function (req, res) {
     res.render('index.ejs', {genres: genres, books: books, genre: genre, error: error});
 });
 
-
 app.listen(3000, function () {
     console.log('Serwer działa na porcie 3000');
 });
 
 process.on('SIGINT',function(){
-  console.log('\nshutting down');
-  var text = "var TAFFY = require('taffy');\n\nvar books = TAFFY(";
+    console.log('\nshutting down');
+    var text = "var TAFFY = require('taffy');\n\nvar books = TAFFY(";
     text += baza().stringify();
     text += ");\n\nmodule.exports = books;";
     fs.writeFile('./db/books.js', text, function (err,data) {
-      if (err) console.log(err);
-      process.exit();
+        if (err) console.log(err);
+        process.exit();
     });
-
 });
